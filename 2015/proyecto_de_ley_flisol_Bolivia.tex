@@ -1,0 +1,143 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[letterpaper]{geometry}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym,amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage[pdftex=true,colorlinks=true,plainpages=false]{hyperref}
+\hypersetup{urlcolor=blue}
+\hypersetup{linkcolor=black}
+\hypersetup{citecolor=black}
+\usepackage{lastpage}
+\usepackage{url}
+\usepackage{anysize}
+\marginsize{2.2cm}{2.2cm}{0.8cm}{1.7cm}
+\usepackage{fancyhdr}
+\usepackage{anyfontsize}
+\usepackage{tocbibind}
+\usepackage{eso-pic}
+\usepackage{mathptmx}
+\usepackage{draftwatermark}
+\usepackage{multirow}
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{blindtext}
+\usepackage{longtable}
+\usepackage[document]{ragged2e}
+
+
+%-------------------------
+
+\pagestyle{fancy}
+\lhead{ }
+\chead{
+	{ \Huge \tt Universidad Mayor de San Simón }\\
+	{ \tt \huge Facultad de Ciencias y Tecnología }\\
+	{ \tt \large Sociedad Científica de Estudiantes de Sistemas e Informática }
+}
+\rhead{ }
+
+\lfoot{
+	{ \scriptsize \tt \url{http://www.scesi.org} } \\
+	{ \scriptsize \tt \url{http://www.scesi.memi.umss.edu.bo} }
+}
+\cfoot{
+	{ \scriptsize \tt Prolongación calle Sucre - Parque la Torre - Teléfono: 74312946 } \\
+	{ \scriptsize \tt Bloque central de la FCyT - ultimo piso } \\
+}
+\rfoot{
+	{ \small \tt root@scesi.org } \\
+ 	\thepage/\pageref{LastPage} 
+}
+
+\renewcommand{\headrule}{
+	{
+		\color{brown}
+		\hrule width\headwidth height\headrulewidth\vskip-\headrulewidth
+	}
+}
+\renewcommand{\footrule}{
+	{
+		\color{brown}%
+		\vskip-\footruleskip\vskip-\footrulewidth
+		\hrule width\headwidth height\footrulewidth\vskip\footruleskip
+	}
+}
+\renewcommand{\headrulewidth}{3pt}
+\renewcommand{\footrulewidth}{3pt}
+\headheight = 56pt
+\headsep = 10pt
+\footskip = 28pt
+% %\oddsidemargin = 120pt
+%\textwidth = 300pt
+%--------------------------
+
+\newcommand\BackgroundPic{
+	\put(502,728){
+		\parbox[b][\paperheight]{\paperwidth}{
+			\includegraphics[scale=0.9]{../../img/logoSinFondo.png}
+		}
+	}
+	\put(40,729){
+		\parbox[b][\paperheight]{\paperwidth}{
+			\includegraphics[scale=0.08]{../../img/logoUMSS.jpg}
+		}
+	}
+}
+
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{3mm}
+
+%---------------------------
+\SetWatermarkAngle{0}
+%\SetWatermarkLightness{0.9}
+%\SetWatermarkFontSize{1cm}
+\SetWatermarkScale{3}
+\SetWatermarkText{\includegraphics[scale=0.4]{../../img/waterMark2.png}}
+%--------------------------------------
+
+
+
+\begin{document}
+\AddToShipoutPicture{\BackgroundPic}
+	%	\tableofcontents
+
+~\\
+
+\begin{center}
+{\tt \Large PROYECTO DE LEY\\
+
+Que declara al Festival Latinoamericano de Instalación de Software Libre (FLISOL) - Bolivia como actividad oficial del Estado Plurinacional de Bolivia\\
+
+LA ASAMBLEA LEGISLATIVA PLURINACIONAL\\
+
+D E C R E T A:}
+\end{center}
+{\tt
+\begin{description}
+
+\item[Artículo 1.-]~\\
+(Objeto) Se declara al Festival Latinoamericano de Instalación de Software Libre (FLISOL) - Bolivia como actividad oficial del Estado Plurinacional de Bolivia, debiendo desarrollarse a nivel nacional, con la finalidad de promover el uso del Software Libre, mediante la información a los y las bolivianas, de su filosofía, alcances, avances y desarrollo.
+
+\item[Artículo 2.-]~\\
+(Ejecución) Los Ministerios y sus Entidades Descentralizadas a nivel nacional, las Entidades Territoriales Autónomas del país, anualmente y durante la última semana del mes de abril, en ocasión de la realización del Festival Latinoamericano de Instalación de Software Libre (FLISOL) - Bolivia, deberán, a través de sus unidades y/o dependencias de Tecnologías de la Información y Comunicación (TIC), organizar seminarios, conferencias, charlas, foros, publicaciones impresas y digitales, concursos y toda otra actividad, para todos sus servidores públicos y población en general, a objeto de enseñar, concientizar, instalar y promover el uso y aplicación de software libre.
+
+\item[Artículo 3.-]~\\
+\begin{itemize}
+\item[I.] (Cumplimiento)  El Ministerio de la Presidencia, en combinación con las comunidades y activistas del Software Libre, queda encargado de coordinar con todos los niveles del Estado Plurinacional, el cumplimiento de la presente Ley.
+\item[II.] El Ministerio de la Presidencia, en un plazo no mayor a 60 días posteriores a la conclusión de la FLISOL- Bolivia, deberá recolectar, evaluar y publicar un informe impreso y digital del cumplimiento de la presente Ley.
+\end{itemize}
+\end{description}
+Remítase al Órgano Ejecutivo, para fines constitucionales.\\
+
+\begin{center}
+Sen. Nélida Sifuentes Cueto\\
+1ra. Vicepresidenta Cámara de Senadores \\
+PROYECTISTA \\
+\end{center}
+}
+{\it Fuente:}\\
+ \url{ http://softwarelibrebolivia.blogspot.com/2015/03/buscan-declarar-al-festival.html }
+\end{document}
