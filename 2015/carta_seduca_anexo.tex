@@ -1,0 +1,187 @@
+\documentclass[xcolor, x11names, letterpaper, 12pt]{letter}
+\usepackage[table]{xcolor}
+\definecolor{maroon}{cmyk}{0,0.87,0.68,0.32}
+
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[letterpaper]{geometry}
+\usepackage{latexsym,amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage[pdftex=true,colorlinks=true,plainpages=false]{hyperref}
+\hypersetup{urlcolor=blue}
+\hypersetup{linkcolor=black}
+\hypersetup{citecolor=black}
+\usepackage{lastpage}
+\usepackage{url}
+\usepackage{anysize}
+\marginsize{2.2cm}{2.2cm}{0.8cm}{2cm}
+\usepackage{fancyhdr}
+\usepackage{anyfontsize}
+\usepackage{tocbibind}
+\usepackage{eso-pic}
+\usepackage{mathptmx}
+\usepackage{draftwatermark}
+\usepackage{multirow}
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{blindtext}
+\usepackage{longtable}
+%\usepackage{showframe}
+%-------------------------
+
+\fancypagestyle{plain}{
+	\lhead{ }
+	\chead{
+		{ \tt \Huge Universidad Mayor de San Simón }\\
+		{ \tt \huge Facultad de Ciencias y Tecnología }\\
+		{ \tt \large Sociedad Científica de Estudiantes de Sistemas e Informática }
+	}
+	\rhead{ }
+	
+	\lfoot{
+		{ \scriptsize \tt \url{http://www.scesi.org} } \\
+		{ \scriptsize \tt \url{http://www.scesi.memi.umss.edu.bo} }
+	}
+	\cfoot{
+		{ \scriptsize \tt Prolongación calle Sucre - Parque la Torre - Teléfono: 74312946	 } \\
+		{ \scriptsize \tt Bloque central de la FCyT - ultimo piso } \\
+	}
+	\rfoot{
+		{ \small \tt root@scesi.org } \\
+	 	\thepage/\pageref{LastPage} 
+	}
+}
+
+
+\renewcommand{\headrule}{
+	{
+		\color{brown}
+		\hrule width\headwidth height\headrulewidth\vskip-\headrulewidth
+	}
+}
+\renewcommand{\footrule}{
+	{
+		\color{brown}%
+		\vskip-\footruleskip\vskip-\footrulewidth
+		\hrule width\headwidth height\footrulewidth\vskip\footruleskip
+	}
+}
+\renewcommand{\headrulewidth}{3pt}
+\renewcommand{\footrulewidth}{3pt}
+\headheight = 56pt
+\headsep = 10pt
+\footskip = 28pt
+
+\pagestyle{plain}
+\makeatletter
+\let\ps@empty\ps@plain
+\let\ps@firstpage\ps@plain
+\makeatother
+
+%--------------------------
+
+\newcommand\BackgroundPic{
+	\put(502,724){
+		\parbox[b][\paperheight]{\paperwidth}{
+			\includegraphics[scale=0.9]{../../img/logoSinFondo.png}
+		}
+	}
+	\put(40,724){
+		\parbox[b][\paperheight]{\paperwidth}{
+			\includegraphics[scale=0.08]{../../img/logoUMSS.jpg}
+		}
+	}
+}
+
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{3mm}
+
+%---------------------------
+\SetWatermarkAngle{0}
+%\SetWatermarkLightness{0.9}
+%\SetWatermarkFontSize{1cm}
+\SetWatermarkScale{3}
+\SetWatermarkText{\includegraphics[scale=0.4]{../../img/waterMark2.png}}
+%--------------------------------------
+
+\begin{document}
+\AddToShipoutPicture{\BackgroundPic}
+	%	\tableofcontents
+
+
+
+\date{Cochabamba, \today}
+\begin{letter}{
+    Señor: \\
+    Lic. Jorge Mario Ponce Coca \\
+    \textbf{Director Departamental de Educación}\\
+    \underline {Presente}. -
+}
+
+\begin{center}
+    \opening{\textbf{Ref.:  Solicitud de espacios para la difusión del Festival Latinoamericano de Instalación de Software Libre (FLISoL)}}
+\end{center}
+
+Estimado Lic. Jorge Mario Ponce Coca,
+
+
+A tiempo de saludarlo y desearle éxito en las funciones que desempeña, la Sociedad Científica de Sistemas e Informática (SCESI), perteneciente a la Universidad Mayor de San Simón (UMSS), encargado de la construcción de herramientas destinadas a la Olimpiada Boliviana de Informática (OBI).\\
+
+Le informamos que actualmente la SCESI organiza y coordina el Festival Latinoamericano de Instalación de Software Libre (FLISoL) en Cochabamba con {\bf sede en la UMSS en los ambientes del centro MEMI dentro la Facultad de Ciencias y Tecnología (FCyT), mismo que iniciará a horas 9:00 y finalizará a horas 17:00 el día sábado 25 de Abril del presente año}.\\
+
+
+Para esta actividad hemos considerado contar con su apoyo, facilitándonos una autorización para la difusión en los colegios del cercado, informando acerca del evento para que los estudiantes y maestros puedan asistir a la {\bf FLISoL Cochabamba 2015}.\\
+
+
+Adjuntamos un \textbf{anexo} en el cual se explica los detalles concernientes al evento \textbf{FLISoL}.
+
+Sin otro particular y a la espera de una respuesta favorable a esta solicitud, me despido de usted.
+
+Atentamente, 
+
+\vspace{1.4cm}
+
+\begin{center}
+................................\\
+Ubaldino Zurita \\
+Presidente SCESI-UMSS \\
+\end{center}
+\end{letter}\textsc{}
+
+\begin{center}
+{\Huge Anexo}
+\end{center}
+
+\textbf{Antecedentes FLISoL:}\\
+El FLISoL es el evento de difusión de Software Libre más grande en Latinoamérica y está dirigido a todo tipo de público: estudiantes, académicos, empresarios, trabajadores, funcionarios públicos, entusiastas y aun personas que no poseen mucho conocimiento informático. La \textbf{entrada es gratuita} y su principal objetivo es \textbf{promover el uso del software libre}, dando a conocer al público en general su filosofía, alcances, avances y desarrollo.
+El evento es organizado por las diversas comunidades locales de Software Libre y se desarrolla simultáneamente con eventos en los que se instala, de manera gratuita y totalmente legal, software libre en las computadoras que llevan los asistentes. Además, en forma paralela, se ofrecen charlas, ponencias y talleres, sobre temáticas locales, nacionales y latinoamericanas en torno al Software Libre, en toda su gama de expresiones: artística, académica, empresarial y social.
+\\
+\textbf{Objetivos del evento:}\\
+El principal objetivito es promover el uso del software libre a los estudiantes y dar talleres a los profesores.
+
+\textbf{Coordinación con SEDUCA:}\\
+Mediante su persona solicitamos:\\
+Nos colabore en el envió de una circulante para los colegios.\\
+Una autorización de 10 minutos en los colegios para dar a conocer lo que se realizara en FLISoL.\\
+Autorización para colocar afiches en los colegios para el evento FLISoL.\\
+Esperamos coordinar con su persona o institución para la entrega de certificados.\\
+Esperamos coordinar con su persona o institución para que los certificados tengan un valor curricular en las competencias de méritos que evalúa la dirección departamental de educación.\\
+
+
+\textbf{Talleres:}\\
+Los talleres serán realizados por personas reconocidas en el área de ofimática, instructores de las olimpiadas bolivianas de informatica y robotica como también personas que  trabajan  currículas de educación en base al software libre:\\
+
+\centering
+\rowcolors{1}{ }{maroon!10}
+\begin{tabular}{ccc} \hline
+\rowcolor{maroon!40} $Hora$ & $Taller$ & $Expositor$\\\hline
+A & B & C \\
+0 & 1 & 1 \\
+1 & 0 & 0 \\
+1 & 1 & 1 \\\hline
+\end{tabular}
+
+
+\end{document}
