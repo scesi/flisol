@@ -1,0 +1,170 @@
+\documentclass[xcolor, x11names, letterpaper, 12pt]{letter}
+\usepackage[table]{xcolor}
+\definecolor{maroon}{cmyk}{0,0.87,0.68,0.32}
+
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[letterpaper]{geometry}
+\usepackage{latexsym,amsmath,amssymb,amsthm}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage[pdftex=true,colorlinks=true,plainpages=false]{hyperref}
+\hypersetup{urlcolor=blue}
+\hypersetup{linkcolor=black}
+\hypersetup{citecolor=black}
+\usepackage{lastpage}
+\usepackage{url}
+\usepackage{anysize}
+\marginsize{2.2cm}{2.2cm}{0.8cm}{2cm}
+\usepackage{fancyhdr}
+\usepackage{anyfontsize}
+\usepackage{tocbibind}
+\usepackage{eso-pic}
+\usepackage{mathptmx}
+\usepackage{draftwatermark}
+\usepackage{multirow}
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{blindtext}
+\usepackage{longtable}
+%\usepackage{showframe}
+%-------------------------
+
+\fancypagestyle{plain}{
+	\lhead{ }
+	\chead{
+		{ \tt \Huge Universidad Mayor de San Simón }\\
+		{ \tt \huge Facultad de Ciencias y Tecnología }\\
+		{ \tt \large Sociedad Científica de Estudiantes de Sistemas e Informática }
+	}
+	\rhead{ }
+	
+	\lfoot{
+		{ \scriptsize \tt \url{http://www.scesi.org} } \\
+		{ \scriptsize \tt \url{http://www.scesi.memi.umss.edu.bo} }
+	}
+	\cfoot{
+		{ \scriptsize \tt Prolongación calle Sucre - Parque la Torre - Teléfono: 74312946	 } \\
+		{ \scriptsize \tt Bloque central de la FCyT - ultimo piso } \\
+	}
+	\rfoot{
+		{ \small \tt root@scesi.org } \\
+	 	\thepage/\pageref{LastPage} 
+	}
+}
+
+
+\renewcommand{\headrule}{
+	{
+		\color{brown}
+		\hrule width\headwidth height\headrulewidth\vskip-\headrulewidth
+	}
+}
+\renewcommand{\footrule}{
+	{
+		\color{brown}%
+		\vskip-\footruleskip\vskip-\footrulewidth
+		\hrule width\headwidth height\footrulewidth\vskip\footruleskip
+	}
+}
+\renewcommand{\headrulewidth}{3pt}
+\renewcommand{\footrulewidth}{3pt}
+\headheight = 56pt
+\headsep = 10pt
+\footskip = 28pt
+
+\pagestyle{plain}
+\makeatletter
+\let\ps@empty\ps@plain
+\let\ps@firstpage\ps@plain
+\makeatother
+
+%--------------------------
+
+\newcommand\BackgroundPic{
+	\put(502,724){
+		\parbox[b][\paperheight]{\paperwidth}{
+			\includegraphics[scale=0.9]{../../img/logoSinFondo.png}
+		}
+	}
+	\put(40,724){
+		\parbox[b][\paperheight]{\paperwidth}{
+			\includegraphics[scale=0.08]{../../img/logoUMSS.jpg}
+		}
+	}
+}
+
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{3mm}
+
+%---------------------------
+\SetWatermarkAngle{0}
+%\SetWatermarkLightness{0.9}
+%\SetWatermarkFontSize{1cm}
+\SetWatermarkScale{3}
+\SetWatermarkText{\includegraphics[scale=0.4]{../../img/waterMark2.png}}
+%--------------------------------------
+
+\begin{document}
+\AddToShipoutPicture{\BackgroundPic}
+	%	\tableofcontents
+
+
+
+\date{Cochabamba, \today}
+\begin{letter}{
+    Señor: \\
+    Mgr. Waldo Jimenez Valdivia\\
+    \textbf{Rector Universidad Mayor de San Sim\'on - UMSS}\\
+    \underline {Presente}. -
+}
+
+\begin{center}
+    \opening{\textbf{ Ref.:  Solicitud de apoyo a la Flisol 2015}}
+\end{center}
+
+Estimado Rector:
+
+A tiempo de saludarlo cordialmente, me dirijo a usted con la finalidad 
+de pedir su apoyo para llevar a cabo la Festival Latinoamericano de 
+Instalaci\'on de Software Libre FLISoL 2015, destinado a difundir, 
+compartir el uso del Software Libre que en esta ocasion es organizada 
+por la Sociedad Cient\'ifica de Estudiantes de Sistemas Inform\'atica 
+- SCESI, en ambientes del Centro MEMI el d\'ia s\'abado 25 de abril 
+donde se iniciara a las 9:00 AM y finalizando a las 5:00 PM.
+
+El apoyo consiste en proporcionar materiales de escritorio como:
+\begin{center}
+\begin{enumerate}
+   \item[CD]  Destinado para distribuir programas compatibles con Windows y Mac.
+   \item[DVD] Destinado para distribuir las distribuciones linux (Debian, Ubuntu, Fedora, ...)
+   \item[Hojas] Destinado para imprimir afiches del evento.
+\end{enumerate}
+\end{center}
+%Con el consiguiente apoyo se pretende impulsar el uso del Software 
+%Libre tanto en el a\'mbito educativo y profesional, con esto se estar\'ia 
+%cumpliendo las regulaciones establecidas por los decretos 
+%1793 del 13 de noviembre del 2013 y 1874 del 23 de enero del 2014 que 
+%mencionan el apoyo y el uso de software libre a instituciones publicas.
+
+
+La Universidad Mayor de San Sim\'on, siempre se a destacado por su calidad en 
+la ense\~nanza y su apoyo a la formaci\'on profesional a lo largo de los a\'nos. 
+La SCESI a travez de este tipo de eventos pretende reafirmar la meta para con 
+la UMSS , ademas de cumplir con los objetivos propios del software libre y de 
+esta forma colaborar con el avance de la tecnolog\'ia en nuestro pais.
+
+
+Sin otro particular y a la espera de una respuesta favorable a esta solicitud, 
+me despido muy cordialmente.
+
+\vspace{1.4cm}
+
+\begin{center}
+................................\\
+Ubaldino Zurita \\
+Presidente SCESI-UMSS \\
+\end{center}
+\end{letter}\textsc{}
+\end{document}
